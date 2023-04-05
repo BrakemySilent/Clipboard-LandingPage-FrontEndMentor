@@ -1,0 +1,158 @@
+@use './_colors' as colors;
+@use './_component' as component;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.header {
+	// height: 100vh;
+
+	&__background {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/bg-header-mobile.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: -4;
+	}
+
+	&__image {
+		margin-top: 50px;
+		transform: scale(0.9);
+	}
+
+	&__heading {
+		margin-top: 50px;
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	&__text {
+		margin-top: 20px;
+		text-align: center;
+		font-size: 0.8rem;
+		line-height: 1.4rem;
+		color: colors.$grayisch;
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__btn {
+		margin-top: 20px;
+
+		&-green {
+			background-color: colors.$strongCyan;
+			box-shadow: 2px 2px green;
+		}
+
+		&-blue {
+			background-color: colors.$lightBlue;
+			box-shadow: 2px 2px blue;
+		}
+	}
+}
+
+// 768px
+
+@media (min-width: 768px) {
+	.header {
+		&__image {
+			margin-top: 80px;
+			transform: scale(1.2);
+		}
+
+		&__heading {
+			margin-top: 50px;
+			font-size: 2rem;
+		}
+
+		&__text {
+			margin-top: 50px;
+			font-size: 1.3rem;
+		}
+
+		&__btn {
+			&-green {
+				margin-top: 100px;
+				background-color: colors.$strongCyan;
+				box-shadow: 2px 2px green;
+			}
+
+			&-blue {
+				background-color: colors.$lightBlue;
+				box-shadow: 2px 2px blue;
+			}
+		}
+	}
+}
+
+// Desktop 1024px
+
+@media (min-width: 1024px) {
+	.header {
+		&__background {
+			background-repeat: repeat;
+			background-size: cover;
+		}
+
+		&__image {
+			margin-top: 75px;
+			transform: scale(1.2);
+		}
+
+		&__heading {
+			margin-top: 50px;
+			font-size: 1.6rem;
+			text-align: center;
+		}
+
+		&__text {
+			margin-top: 20px;
+			text-align: center;
+			font-size: 0.8rem;
+			line-height: 1.4rem;
+			color: colors.$grayisch;
+		}
+
+		&__box {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 3rem;
+			width: 80%;
+			height: 100%;
+		}
+
+		&__btn {
+			margin-top: 20px;
+
+			&-green {
+				background-color: colors.$strongCyan;
+				box-shadow: 2px 2px green;
+			}
+
+			&-blue {
+				background-color: colors.$lightBlue;
+				box-shadow: 2px 2px blue;
+			}
+		}
+	}
+}

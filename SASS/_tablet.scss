@@ -1,0 +1,38 @@
+@use './colors' as colors;
+
+@media (min-width: 768px) {
+	.header {
+		&__image {
+			margin-top: 50px;
+			transform: scale(1.5);
+		}
+
+		&__heading {
+			margin-top: 50px;
+			font-size: 1.6rem;
+			text-align: center;
+		}
+
+		&__text {
+			margin-top: 20px;
+			text-align: center;
+			font-size: 0.8rem;
+			line-height: 1.4rem;
+			color: colors.$grayisch;
+		}
+
+		&__btn {
+			margin-top: 20px;
+
+			&-green {
+				background-color: colors.$strongCyan;
+				box-shadow: 2px 2px green;
+			}
+
+			&-blue {
+				background-color: colors.$lightBlue;
+				box-shadow: 2px 2px blue;
+			}
+		}
+	}
+}
