@@ -1,3 +1,21 @@
+@use './colors' as colors;
+
+h1 {
+	font-size: 1.6rem;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.3rem;
+}
+
+p {
+	text-align: center;
+	font-size: 0.8rem;
+	line-height: 1.4rem;
+	color: colors.$grayisch;
+}
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -20,19 +38,57 @@
 	cursor: pointer;
 }
 
+.snippets {
+	&__box {
+		&-item {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 15px;
+		}
+	}
+}
+
 // 768px - tablet
 
 @media (min-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+
+	p {
+		font-size: 1.3rem;
+	}
 	.header__btn {
 		width: 80%;
 		height: 75px;
 		font-size: 1.2rem;
+	}
+	.snippets {
+		&__box {
+			&-item {
+				margin: 25px;
+			}
+		}
 	}
 }
 
 // Desktop 1024px
 
 @media (min-width: 1024px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.3rem;
+		font-size: 0.8rem;
+	}
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -53,5 +109,17 @@
 		color: White;
 		letter-spacing: 2px;
 		cursor: pointer;
+	}
+
+	.snippets {
+		&__box {
+			&-item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin: 15px;
+			}
+		}
 	}
 }
