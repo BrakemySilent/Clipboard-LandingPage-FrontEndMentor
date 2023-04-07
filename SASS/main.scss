@@ -33,14 +33,6 @@ body {
 		transform: scale(0.9);
 	}
 
-	&__heading {
-		margin-top: 50px;
-	}
-
-	&__text {
-		margin-top: 20px;
-	}
-
 	&__box {
 		display: flex;
 		flex-direction: column;
@@ -68,10 +60,6 @@ body {
 //Section Snippets
 
 .snippets {
-	&__heading {
-		margin-bottom: 50px;
-	}
-
 	&__box {
 		display: flex;
 		flex-direction: column;
@@ -91,12 +79,17 @@ body {
 			align-items: center;
 			justify-content: center;
 		}
+	}
+}
 
-		&-item {
-			&--title {
-				margin-bottom: 10px;
-			}
-		}
+// Section Access
+
+.access {
+	margin-top: 100px;
+
+	&__img {
+		width: 100%;
+		margin-top: 30px;
 	}
 }
 
@@ -243,6 +236,11 @@ body {
 					grid-row: 3/4;
 				}
 			}
+		}
+	}
+	.access {
+		&__img {
+			width: 125%;
 		}
 	}
 }

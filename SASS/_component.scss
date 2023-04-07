@@ -3,9 +3,11 @@
 h1 {
 	font-size: 1.6rem;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 h2 {
+	margin-bottom: 15px;
 	font-size: 1.3rem;
 }
 
@@ -108,12 +110,5 @@ p {
 		color: White;
 		letter-spacing: 2px;
 		cursor: pointer;
-	}
-
-	.snippets {
-		&__box {
-			&-item {
-			}
-		}
 	}
 }
