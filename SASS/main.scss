@@ -103,6 +103,20 @@ body {
 	}
 }
 
+// Section Partners
+
+.partners {
+	margin-top: 100px;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 50px;
+	}
+}
+
 // 768px
 
 @media (min-width: 768px) {
@@ -195,11 +209,7 @@ body {
 			}
 		}
 	}
-	.wrapper {
-		&__big {
-			width: 90%;
-		}
-	}
+
 	.snippets {
 		&__heading {
 			width: 80%;
@@ -254,7 +264,10 @@ body {
 		}
 	}
 
-	.offer {
-		
+	.partners {
+		&__box {
+			flex-direction: row;
+			width: 80%;
+		}
 	}
 }

@@ -91,6 +91,10 @@ p {
     height: 100%;
     margin: 20px auto;
   }
+  .wrapper__big {
+    width: 90%;
+    overflow: hidden;
+  }
   .header__btn {
     width: 100%;
     height: 3rem;
@@ -192,6 +196,17 @@ body {
   margin-bottom: 20px;
 }
 
+.partners {
+  margin-top: 100px;
+}
+.partners__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
 @media (min-width: 768px) {
   .header__image {
     margin-top: 80px;
@@ -254,9 +269,6 @@ body {
     background-color: rgb(97, 115, 255);
     box-shadow: 2px 2px blue;
   }
-  .wrapper__big {
-    width: 90%;
-  }
   .snippets__heading {
     width: 80%;
     margin: auto;
@@ -299,5 +311,9 @@ body {
   }
   .access__img {
     width: 125%;
+  }
+  .partners__box {
+    flex-direction: row;
+    width: 80%;
   }
 }/*# sourceMappingURL=main.css.map */

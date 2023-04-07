@@ -110,6 +110,11 @@ p {
 		width: 50%;
 		height: 100%;
 		margin: 20px auto;
+
+		&__big {
+			width: 90%;
+			overflow: hidden;
+		}
 	}
 
 	.header__btn {
