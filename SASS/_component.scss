@@ -16,6 +16,7 @@ p {
 	font-size: 0.8rem;
 	line-height: 1.4rem;
 	color: colors.$grayisch;
+	margin-bottom: 20px;
 }
 
 .wrapper {
@@ -49,6 +50,17 @@ p {
 			align-items: center;
 			margin: 15px;
 		}
+	}
+}
+
+.offer {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		margin-top: 20px;
 	}
 }
 
@@ -110,5 +122,19 @@ p {
 		color: White;
 		letter-spacing: 2px;
 		cursor: pointer;
+	}
+
+	.offer {
+		&__box {
+			flex-direction: row;
+
+			&-item {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				gap: 10px;
+				margin: 0 20px;
+			}
+		}
 	}
 }

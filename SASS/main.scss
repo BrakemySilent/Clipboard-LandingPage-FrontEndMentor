@@ -93,6 +93,16 @@ body {
 	}
 }
 
+// Section Offer
+
+.offer {
+	&__box {
+		&-icon {
+			margin-bottom: 20px;
+		}
+	}
+}
+
 // 768px
 
 @media (min-width: 768px) {
@@ -209,7 +219,7 @@ body {
 			&-img {
 				grid-column: 1/2;
 				grid-row: 1/4;
-				width: 100%;
+				width: 500px;
 				margin: auto 15px;
 			}
 
@@ -242,5 +252,9 @@ body {
 		&__img {
 			width: 125%;
 		}
+	}
+
+	.offer {
+		
 	}
 }
