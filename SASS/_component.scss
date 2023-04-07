@@ -82,12 +82,11 @@ p {
 
 @media (min-width: 1024px) {
 	h1 {
-		font-size: 2rem;
+		font-size: 2.2rem;
 	}
 
 	p {
-		font-size: 1.3rem;
-		font-size: 0.8rem;
+		font-size: 1rem;
 	}
 	.wrapper {
 		display: flex;
@@ -114,11 +113,6 @@ p {
 	.snippets {
 		&__box {
 			&-item {
-				display: flex;
-				flex-direction: column;
-				justify-content: center;
-				align-items: center;
-				margin: 15px;
 			}
 		}
 	}
