@@ -29,7 +29,7 @@ p {
 	margin: 20px auto;
 }
 
-.header__btn {
+.btn {
 	width: 100%;
 	height: 3.2rem;
 	background: none;
@@ -39,6 +39,16 @@ p {
 	color: White;
 	letter-spacing: 2px;
 	cursor: pointer;
+
+	&__green {
+		background-color: colors.$strongCyan;
+		box-shadow: 2px 2px green;
+	}
+
+	&__blue {
+		background-color: colors.$lightBlue;
+		box-shadow: 2px 2px blue;
+	}
 }
 
 .snippets {
@@ -78,7 +88,7 @@ p {
 	p {
 		font-size: 1.3rem;
 	}
-	.header__btn {
+	.btn {
 		width: 80%;
 		height: 75px;
 		font-size: 1.2rem;
@@ -102,6 +112,27 @@ p {
 	p {
 		font-size: 1rem;
 	}
+
+	.btn {
+		width: 100%;
+		height: 3rem;
+		background: none;
+		border: none;
+		border-radius: 50px;
+		font-size: 0.9rem;
+		color: White;
+		letter-spacing: 2px;
+		cursor: pointer;
+		&__green {
+			background-color: colors.$strongCyan;
+			box-shadow: 2px 2px green;
+		}
+
+		&__blue {
+			background-color: colors.$lightBlue;
+			box-shadow: 2px 2px blue;
+		}
+	}
 	.wrapper {
 		display: flex;
 		flex-direction: column;
@@ -115,18 +146,6 @@ p {
 			width: 90%;
 			overflow: hidden;
 		}
-	}
-
-	.header__btn {
-		width: 100%;
-		height: 3rem;
-		background: none;
-		border: none;
-		border-radius: 50px;
-		font-size: 0.9rem;
-		color: White;
-		letter-spacing: 2px;
-		cursor: pointer;
 	}
 
 	.offer {
